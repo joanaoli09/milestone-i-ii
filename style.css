@@ -1,0 +1,114 @@
+body {
+  background-color: rgb(250, 248, 233);
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: #333;
+}
+
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 50px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 13px;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+section {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 300px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 13px;
+}
+
+form > div {
+  width: 100%;
+  margin-top: 1em;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+form > div > input {
+  width: 100%;
+}
+textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+
+  vertical-align: top;
+  height: 5em;
+}
+
+#Description {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 5px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  border: 1px solid #5d6063;
+  border-radius: 5px;
+  font-weight: bold;
+  justify-content: center;
+
+  width: 100px;
+  margin: 20px auto;
+}
