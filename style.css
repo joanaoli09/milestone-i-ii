@@ -122,3 +122,17 @@ button {
   width: 100px;
   margin: 20px auto;
 }
+.a {
+  text-align: center;
+}
+
+.p {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
