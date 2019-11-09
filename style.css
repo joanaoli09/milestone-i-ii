@@ -12,6 +12,11 @@ h1 {
   color: #333;
 }
 
+h1:hover {
+  font-size: 18px;
+  transition: 0.1s font-size linear;
+}
+
 h2 {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -29,6 +34,11 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+}
+
+.transition:hover {
+  font-size: 15px;
+  transition: 0.1s font-size linear;
 }
 
 li {
