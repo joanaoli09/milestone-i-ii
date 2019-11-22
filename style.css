@@ -1,15 +1,16 @@
 body {
-  background-color: rgb(250, 248, 233);
+  background-color: white;
   margin-bottom: 50px;
 }
 
 h1 {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 22px;
   margin-bottom: 30px;
   margin-top: 30px;
   color: #333;
+  margin: 0 auto;
 }
 
 h1:hover {
@@ -18,8 +19,12 @@ h1:hover {
 }
 
 @media screen and (min-width: 600px) {
-  .h1 {
-    font-size: calc(6vmin + 5px);
+  h1 {
+    font-size: calc(4vmin + 1px);
+    color: black;
+  }
+  ul {
+    font-size: 30px;
   }
 }
 
@@ -39,7 +44,6 @@ ul {
   margin-right: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
 }
 
 .transition:hover {
@@ -48,47 +52,66 @@ ul {
 }
 
 li {
-  float: left;
+  float: right;
 }
 
 li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 16px;
+  padding-right: 35px;
   text-decoration: none;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 13px;
+  font-family: "Cormorant", "Lucida Sans", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+  font-size: 16px;
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: rgb(243, 204, 211);
 }
 
 section {
+  display: block;
   margin: 0 auto;
-  width: 400px;
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 1em;
+  position: relative;
 }
 
-main {
-  max-width: 1200px;
-  margin: 0 auto;
+.pagetitle {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+  padding-bottom: 30px;
+  width: 476px;
 }
 
+.intro {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  padding-bottom: 30px;
+  width: 476px;
+  margin: 0 auto;
+}
 form {
   margin: 0 auto;
   max-width: 300px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  padding-bottom: 30px;
   font-size: 13px;
 }
 
+.myform {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+}
+
 form > div {
-  width: 100%;
+  width: 150%;
   margin-top: 1em;
 }
 
@@ -102,15 +125,27 @@ form > div > input {
 }
 textarea {
   font: 1em sans-serif;
-  width: 300px;
-  box-sizing: border-box;
+  width: 100%;
+  box-sizing: none;
   border: 1px solid #999;
-
   vertical-align: top;
   height: 5em;
+  padding-top: 25px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
 }
 
-#Description {
+input[type="text"],
+[type="email"],
+[type="password"],
+[type="textarea"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
+.typeofjob {
   margin-bottom: 20px;
 }
 
@@ -126,19 +161,59 @@ button {
   justify-content: center;
 
   width: 100px;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 .a {
   text-align: center;
 }
 
-.p {
+.anajoaomachado {
+  width: 45%;
+  position: relative;
+  justify-self: start;
+  align-self: start;
+  font-size: 17px;
+  padding-left: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+h3 {
+  width: 45%;
+  position: relative;
+  justify-self: start;
+  align-self: start;
+  font-size: 14px;
+  padding-left: 110px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.about {
+  width: 45%;
+  min-height: 160px;
+  position: relative;
+  justify-self: start;
+  align-self: start;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
-  border: 1px solid #ccc;
-  border-radius: 1em;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+.picture {
+  width: 45%;
+  position: relative;
+  justify-self: start;
+  align-self: start;
+  display: inline-block;
+}
+.page {
+  width: 50%;
+  padding: 150px 0px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
 }
