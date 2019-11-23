@@ -26,6 +26,26 @@ h1:hover {
   ul {
     font-size: 30px;
   }
+  .page {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .about {
+    display: inline-block;
+    height: 800px;
+    max-height: 800px;
+    width: 60%;
+    max-width: 60%;
+    overflow: hidden;
+  }
+  .picture {
+    display: inline-block;
+    height: 800px;
+    max-height: 800px;
+    width: 45%;
+    max-width: 45%;
+    overflow: hidden;
+  }
 }
 
 h2 {
@@ -168,7 +188,7 @@ button {
 }
 
 .anajoaomachado {
-  width: 45%;
+  width: 45‰;
   position: relative;
   justify-self: start;
   align-self: start;
@@ -211,7 +231,7 @@ h3 {
   display: inline-block;
 }
 .page {
-  width: 50%;
+  width: 45%;
   padding: 150px 0px;
   position: relative;
   display: block;
