@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="utf-8">
+<title>A.J. Machado</title>
+<meta name="author" content="Joana Oliveira">
+<meta name="description" content="Ana João Machado is a young freelance designer based in London. From branding and editorial to illustration, she offers a full range of design services.">
+<link href="./style.css" rel="stylesheet" />
+  </head>
+    <body>
+      <header>
+  <nav>
+  <ul>
+    <li><a class="transition" id="Home" href="link">Home</a></li>
+    <li><a class="transition" href="./about.html">About</a></li>
+    <li><a class="transition" href="link">Work</a></li>
+    <li><a class="transition" href="./contact.html">Contact me</a></li>
+    <li><a class="transition" href="./shop.html">Shop</a></li>
+  </ul>
+</nav>
+
+</header>
+
+
+<section>
+
+  
+    <div class="pagetitle">
+        <h1>Contact me</h1>
+      </div>
+        <p class="intro">If you would like to get in touch to discuss your bussiness query, please complete the questions below, so I can best help you with your query. </p>
+ 
+<form action="" class="myform" id="myform" >
+  
+  <div>
+      <label for="name">Your name</label>
+      <input type="text" id="name" name="user_name"/>
+  </div>
+
+  <div>
+
+      <label for="Business">Tell me a bit about yourself and your business</label>
+      <textarea id="Business" name="Business"></textarea>
+  </div>
+  <div>
+
+      <label for="Goals">What are your goals in this new project?</label>
+      <textarea id="Goals" name="Goals"></textarea>
+  </div>
+  <div>
+
+      <label for="Help">What are the main issues that you need help with?</label>
+      <textarea id="Help" name="Help"></textarea>
+  </div>
+  <div>
+      <label for="mail">E-mail</label>
+    <input type="email" id="mail" name="user_mail" />
+  </div>
+  <div>
+    <label for="Phone number">Phone number</label>
+    <input type="text" id="Phone number" name="Phone number">
+  </div>
+
+<div>
+
+  <p>Age:</p>
+<div>
+   <input type="radio" id="Under 18" name="age" value="Under 18"checked>
+    <label for="Under 18">Under 18</label>
+
+</div>
+  <div>
+    <input type="radio" id="18 or more" name="age" value="18 or more" checked>
+    <label for="18 or more">18 or more</label>
+</div>
+
+  <div>
+    <h2>What information do you specifically need?</h2>
+
+<div>
+    <input type="checkbox" id="Budgets" name="Budgets"checked>
+    <label for="Budgets">Budget</label>
+</div>
+
+  <div>
+    <input type="checkbox" id="Meetings" name="Meeting">
+    <label for="Meetings">Meeting</label>
+</div>
+
+<div>
+    <input type="checkbox" id="Services" name="Service">
+    <label for="Services">Services</label>
+</div>
+
+
+<div>
+    <label for="Type of Job">
+    <span>Type of Job:</span>
+</label>
+              
+    <select id="Type of Job" name="Type of Job" class="typeofjob">
+    <option value="Graphic Design">Graphic Design</option>
+    <option value="Web Design">Web Design</option>
+    <option value="Illustration">Illustration</option>
+    <option value="Other">Other</option>
+</select>
+    </div>
+    
+  <div class="button">
+    <button type="submit">Submit</button>
+   </div>
+  
+
+  </form>
+
+      </section>
+
+      <form id="fizzform">
+        <label for="number">Enter a number:</label>
+        <input type="number" id="input" name="number" min="1" max="20">
+        <input type="button" id="submitBtn" value="Submit">
+        <input id="reset" type="reset" value="Reset">
+        </form>
+    <ul id="results"></ul>
+    <script>
+    const form = document.getElementById("fizzform");
+    const input = document.getElementById("input");
+    const submitBtn = document.getElementById("submitBtn")
+    const results = document.getElementById("results")
+    console.log("IT WORKS")
+    console.log(form,input)
+    const submitHandler = function (event) {
+      // prevents form from reloading
+      event.preventDefault()
+      //cleans up results
+      results.innerHTML = '';
+      //populates results again
+      for (let i= 1; i <= input.value; i++) {
+        const newLi = document.createElement("li")
+        newLi.innerText = i;
+        results.append(newLi)
+
+      // const fizzBuzz = function () {
+      //if (i % 3 === 0) result += "Fizz";
+      //if (i % 5 === 0) result += "Buzz";
+      //if (i % 3 && i % 5 === 0) result += "BuzzFizz";
+    //return results;
+      // }
+      
+      }
+      //console.log (event, event.target)
+    }
+    submitBtn.onclick = submitHandler ;
+    //equivalent to
+    //submit.addEventListener("onclick", submitHandler)
+    </script>
+  </body>
+</html>

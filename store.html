@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>A.J. Machado</title>
+    <meta name="author" content="Joana Oliveira" />
+    <meta
+      name="description"
+      content="Ana João Machado is a young freelance designer based in London. From branding and editorial to illustration, she offers a full range of design services."
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      href="file:///Users/joanaleitaooliveira/Desktop/shop/fontawesome-free-5.12.0-web/css/all.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-center">
+          <div class="nav">
+            <ul>
+              <li><a class="transition" id="Home" href="link">Home</a></li>
+              <li>
+                <a class="transition" id="About" href="./about.html">About</a>
+              </li>
+              <li><a class="transition" id="Work" href="link">Work</a></li>
+              <li>
+                <a class="transition" id="Contact " href="./index.html"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a class="transition" id="Shop" href="./index3.html">Shop</a>
+              </li>
+            </ul>
+          </div>
+          <div class="cart-btn">
+            <span class="nav-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+            <div class="cart-items">0</div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!---products-->
+    <section class="products">
+      <div class="section-title">
+        <h2>Collections</h2>
+      </div>
+      <div class="products-center">
+        <!--single product-->
+        <article class="product">
+          <div class="img-container">
+            <img src="poster.png" alt="product" class="product-img" />
+            <button class="bag-btn" data-id="2">
+              <i class="fas fa-shopping-cart"></i>
+              add to bag
+            </button>
+          </div>
+          <h3>Poster</h3>
+          <h4>$14</h4>
+        </article>
+        <!--end of single product-->
+        <!--single product-->
+        <article class="product">
+          <div class="img-container">
+            <img src="poster2.png" alt="product" class="product-img " />
+            <button class="bag-btn" data-id="3">
+              <i class="fas fa-shopping-cart"></i>
+              add to bag
+            </button>
+          </div>
+          <h3>Poster</h3>
+          <h4>$17</h4>
+        </article>
+        <!--end of single product -->
+        <!--single product-->
+        <article class="product">
+          <div class="img-container">
+            <img src="Magazine2.jpg" alt="product" class="product-img " />
+            <button class="bag-btn" data-id="4">
+              <i class="fas fa-shopping-cart"></i>
+              add to bag
+            </button>
+          </div>
+          <h3>Magazine 1st Edition</h3>
+          <h4>$12</h4>
+        </article>
+        <!--end of single product -->
+        <!--single product-->
+        <article class="product">
+          <div class="img-container">
+            <img src="magazine.jpg" alt="product" class="product-img" />
+            <button class="bag-btn" data-id="1">
+              <i class="fas fa-shopping-cart"></i>
+              add to bag
+            </button>
+          </div>
+          <h3>Magazine 2nd Edition</h3>
+          <h4>$12</h4>
+        </article>
+        <!--end of single product -->
+        <!--single product-->
+        <article class="product">
+          <div class="img-container">
+            <img src="Magazine3.jpg" alt="product" class="product-img " />
+            <button class="bag-btn" data-id="5">
+              <i class="fas fa-shopping-cart"></i>
+              add to bag
+            </button>
+          </div>
+          <h3>Magazine 3rd Edition</h3>
+          <h4>$12</h4>
+        </article>
+        <!--end of single product -->
+      </div>
+    </section>
+    <!--end of products -->
+    <!--cart-->
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">
+          <i class="fas fa-window-close"></i>
+        </span>
+        <h2>Your cart</h2>
+        <div class="cart-content">
+          <!--cart item-->
+          <div class="cart-item">
+            <img src="Magazine2.jpg" alt="product" />
+            <div>
+              <h4>Magazine</h4>
+              <h5>$14</h5>
+              <span class="remove-item" data-id="4">Remove</span>
+            </div>
+            <div>
+              <i class="fas fa-chevron-up" data-id="item.id"></i>
+              <p class="item-amount">1</p>
+              <i class="fas fa-chevron-down" data-id="item.id"></i>
+            </div>
+          </div>
+          <!--end of  cart item-->
+        </div>
+        <div class="cart-footer">
+          <h3>Your total : $ <span class="cart-total">0</span></h3>
+          <button class="clear-cart banner-btn">Clear cart</button>
+        </div>
+      </div>
+    </div>
+    <!--end of cart-->
+
+    <!--app js-->
+    <script src="app.js"></script>
+  </body>
+</html>
